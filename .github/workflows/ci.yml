@@ -1,9 +1,7 @@
 name: ci
 
-# Release pull requests into production carry master's latest commit, which this already tested.
 on:
   pull_request:
-    branches-ignore: [production]
     paths-ignore:
       - '**.md'
       - 'docs/**'
