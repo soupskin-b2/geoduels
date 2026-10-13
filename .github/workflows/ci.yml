@@ -1,11 +1,8 @@
 name: ci
 
 on:
+  # Every pull request, so the checks master requires always report.
   pull_request:
-    paths-ignore:
-      - '**.md'
-      - 'docs/**'
-      - 'extension/**'
   push:
     branches:
       - master
